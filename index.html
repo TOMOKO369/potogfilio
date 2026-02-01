@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - wakabayahitomo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            height: 100vh;
+            width: 100vw;
+            overflow-y: auto;
+            /* Allow scrolling if needed */
+            display: flex;
+            justify-content: flex-end;
+            /* Align to right like the mockup */
+            align-items: center;
+            background-image: url('./haikemozinasi.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Keep background static */
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 768px) {
+            body {
+                justify-content: center;
+                align-items: flex-start;
+                /* Start from top to allow scrolling */
+                padding-top: 2rem;
+                /* Give some space at top */
+            }
+
+            .menu-container {
+                margin-right: 0 !important;
+                width: 90% !important;
+                padding: 2rem 1.5rem;
+                /* Slightly less padding */
+                gap: 1rem;
+                /* Smaller gap */
+                margin-bottom: 2rem;
+                /* Space at bottom for scrolling */
+            }
+
+            .menu-button {
+                padding: 1rem;
+                /* Smaller button padding */
+            }
+        }
+
+        .menu-container {
+            background-color: rgba(255, 252, 245, 0.9);
+            /* Creamy/White background from image */
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            /* Sharp or slightly rounded corners */
+            width: 400px;
+            margin-right: 10%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .menu-button {
+            display: block;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 1px solid #aaa;
+            /* Slight border */
+            color: #333;
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: 500;
+            /* Regular weight */
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-color: #888;
+        }
+
+        /* Overlay text on the left (Portfolio title) if needed based on image, 
+           but the image itself likely contains the text 'portfolio' and the character.
+           If the background image already has the text, we don't need to add it HTML.
+           Looking at the user request "Step 0", the image has "portfolio" text on it.
+           So I will rely on the background image for the left side visuals.
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-container">
+        <a href="https://tomoko369.github.io/fortunetelling/" class="menu-button">
+            あなたの才能がわかる占い
+        </a>
+
+        <a href="https://tomoko369.github.io/account/" class="menu-button">
+            ３秒で解決！勘定科目検索
+        </a>
+
+        <a href="https://tomoko369.github.io/YARUKINAI/" class="menu-button">
+            やる気ないもんスタンプHP
+        </a>
+
+        <a href="https://tomoko369.github.io/omamorikigan/" class="menu-button">
+            開運祈願御守スタンプHP
+        </a>
+
+        <a href="https://tomoko369.github.io/self-introduction/" class="menu-button">
+            自己紹介
+        </a>
+
+        <a href="https://tomoko369.github.io/teacher/" class="menu-button">
+            個人レッスンHP
+        </a>
+    </div>
+
+</body>
+
+</html>
