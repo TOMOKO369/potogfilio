@@ -22,10 +22,10 @@
             overflow-y: auto;
             /* Allow scrolling if needed */
             display: flex;
-            justify-content: flex-end;
-            /* Align to right like the mockup */
+            justify-content: center;
+            /* Align to center */
             align-items: center;
-            background-image: url('./haikemozinasi.png');
+            background-image: url('./new_background.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -36,27 +36,24 @@
         /* Mobile adjustment */
         @media (max-width: 768px) {
             body {
-                justify-content: center;
-                align-items: flex-start;
-                /* Start from top to allow scrolling */
-                padding-top: 2rem;
-                /* Give some space at top */
+                align-items: stretch;
+                /* Let children determine alignment via margins */
+                padding: 1rem;
+                /* General padding around screen */
             }
 
             .menu-container {
-                margin-right: 0 !important;
-                width: 90% !important;
+                margin: auto !important;
+                /* Perfect centering (vertical + horizontal) */
+                width: 100% !important;
+                max-width: 400px;
+                /* Limit width */
                 padding: 2rem 1.5rem;
-                /* Slightly less padding */
                 gap: 1rem;
-                /* Smaller gap */
-                margin-bottom: 2rem;
-                /* Space at bottom for scrolling */
             }
 
             .menu-button {
                 padding: 1rem;
-                /* Smaller button padding */
             }
         }
 
@@ -67,7 +64,7 @@
             border-radius: 8px;
             /* Sharp or slightly rounded corners */
             width: 400px;
-            margin-right: 10%;
+            /* removed margin-right to allow centering */
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
